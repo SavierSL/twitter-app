@@ -1,0 +1,95 @@
+.msgBox {
+  border: solid rgb(155, 155, 155) 1px;
+  border-radius: 2rem;
+  background: white;
+  height: 40rem;
+  width: 40rem;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: fixed;
+
+  .msgContainer {
+    height: 20rem;
+    // tweet
+    .tweet {
+      display: flex;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem;
+      margin: 0 auto;
+      width: 80%;
+      margin-top: 5rem;
+      border-radius: 2rem;
+    }
+    .tweetDetails {
+      margin-left: 1rem;
+      span {
+        font-weight: 200;
+      }
+    }
+    .picture {
+      height: 3rem;
+      width: 3rem;
+      background: red;
+      border-radius: 100%;
+    }
+    // msg of the user
+    .replyBox {
+      width: 80%;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+
+      .pictureOfUser {
+        margin-left: 2.1rem;
+        height: 3rem;
+        width: 3rem;
+        background: pink;
+        border-radius: 100%;
+      }
+      .msgDetails {
+        margin-left: 1rem;
+        input {
+          border: none;
+          padding: 1rem;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .replying {
+    margin-left: 10rem;
+    color: rgb(9, 114, 252);
+  }
+  .reply {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 4rem;
+    button {
+      padding: 1rem;
+      width: 10rem;
+      border-radius: 5rem;
+      border: none;
+      background: rgb(99, 255, 252);
+      cursor: pointer;
+      &:hover {
+        background: rgb(10, 238, 234);
+      }
+    }
+  }
+  // rtmsg
+  .rtmsgContainer {
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+  }
+}

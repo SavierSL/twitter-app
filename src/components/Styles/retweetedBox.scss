@@ -1,0 +1,29 @@
+// retweetContainer
+.retweetContentContainer {
+  display: flex;
+  flex-direction: column;
+  border: gray solid 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+
+  .retweetedBoxContainer {
+    display: flex;
+    align-items: center;
+  }
+  .pictureRt {
+    background: red;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+  }
+  .userNameRt {
+    span {
+      font-weight: 400;
+      color: gray;
+    }
+  }
+  .retweetDetailsRt {
+    margin-left: 1rem;
+  }
+}

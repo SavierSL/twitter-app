@@ -1,0 +1,95 @@
+.homeLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 23.1vw;
+  border-bottom: solid rgb(223, 223, 223) 0.5px;
+  height: 3.4rem;
+  width: 44vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+
+  h2 {
+    margin: 1rem;
+  }
+}
+.newsFeedContainer {
+  width: 44vw;
+  height: 100%;
+  margin-left: 23.1vw;
+
+  margin-top: 3rem;
+
+  // shareBox
+  .shareBox {
+    height: 8rem;
+    display: flex;
+    justify-content: flex-start;
+
+    .picture {
+      background: gray;
+      border-radius: 100%;
+      height: 3rem;
+      width: 3rem;
+      margin: 1rem;
+      margin-left: 2rem;
+    }
+    .tweetContainer {
+      width: 80%;
+
+      .shareInput {
+        border: none;
+        padding: 1rem;
+        margin: 1rem;
+        width: 80%;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    // icons
+    .iconsBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .icons {
+        ul {
+          margin-left: -1rem;
+          li {
+            display: inline-block;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      .tweetBtn {
+        .tweet {
+          border-radius: 5rem;
+          padding: 10px;
+          width: 8rem;
+          border: none;
+          color: white;
+          background: rgb(69, 196, 255);
+          margin-right: 1rem;
+          cursor: pointer;
+          &:hover {
+            background: rgb(9, 148, 213);
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  // newsFeeds
+
+  .newsFeeds {
+    border-top: solid rgb(240, 240, 240) 1rem;
+    margin-top: 1rem;
+    height: 100vh;
+  }
+}

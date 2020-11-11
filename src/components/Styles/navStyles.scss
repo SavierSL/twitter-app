@@ -1,0 +1,45 @@
+.navContainerBtns {
+  width: 23.2vw;
+  height: 100vh;
+  justify-content: space-between;
+  border-right: solid rgb(223, 223, 223) 0.5px;
+  z-index: 3000;
+  left: 0;
+  top: 0;
+  position: fixed;
+
+  h1 {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    color: black;
+  }
+  .navBtnContainer {
+    height: 100%;
+    ul {
+      li {
+        font-weight: 600;
+        display: block;
+        font-size: 1.5rem;
+        padding: 1rem;
+        cursor: pointer;
+        a {
+          color: black;
+        }
+      }
+      .tweet {
+        border-radius: 5rem;
+        padding: 10px;
+        width: 9rem;
+        border: none;
+        color: white;
+        background: rgb(69, 196, 255);
+        margin-right: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.retweetContainer {
+  height: 40rem;
+  width: 50rem;
+  background: white;
+  border: solid 2px rgb(141, 141, 141);
+  border-radius: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 1rem auto;
+  z-index: 1000;
+  position: fixed;
+  .retweetDetails {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    .picture {
+      background: rgb(147, 239, 242);
+      height: 5rem;
+      width: 5rem;
+      border-radius: 100%;
+      margin-top: 5rem;
+      margin-left: 5rem;
+    }
+    .inputTweet {
+      margin-top: 6rem;
+      margin-left: 2rem;
+      input {
+        border: none;
+        background: rgb(247, 247, 247);
+        height: 3rem;
+        width: 25rem;
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+    }
+  }
+  .retweetContent {
+    margin-top: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  z-index: 1;
+  cursor: pointer;
+}

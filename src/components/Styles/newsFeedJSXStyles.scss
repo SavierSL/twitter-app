@@ -1,0 +1,53 @@
+.mainNfContainer {
+  margin-top: 2rem;
+  .nfContainer {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: flex-start;
+    .mainTweet {
+      width: 100%;
+      cursor: pointer;
+      .tweetContent {
+        display: flex;
+        .picture {
+          background: gray;
+          border-radius: 100%;
+          width: 3rem;
+          height: 3rem;
+          margin-left: 2rem;
+        }
+        .tweetDetails {
+          .userName {
+            margin-left: 1rem;
+            span {
+              font-weight: 200;
+              color: gray;
+            }
+          }
+          .tweetText {
+            margin-left: 1rem;
+          }
+        }
+      }
+      .rt {
+        margin-left: 5rem;
+        margin-right: 5rem;
+      }
+    }
+  }
+  .interactBtn {
+    margin-left: 5rem;
+    ul {
+      margin-left: -1.5rem;
+      li {
+        display: inline-block;
+        margin-right: 5rem;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+}

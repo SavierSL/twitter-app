@@ -1,0 +1,43 @@
+.retweetBox {
+  border: solid gray 1px;
+  height: 100%;
+  border-radius: 1rem;
+  width: 30rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  .tweetContent {
+    display: flex;
+    align-items: center;
+    .picture {
+      background: orange;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 100%;
+      margin: 1rem;
+    }
+    .tweetDetails {
+      .userName {
+        h4 {
+          span {
+            font-weight: 400;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
+.rtBtn {
+  border: none;
+  padding: 1rem;
+  border-radius: 5rem;
+  background: rgb(154, 252, 255);
+  width: 10rem;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  margin: 5rem;
+  cursor: pointer;
+}

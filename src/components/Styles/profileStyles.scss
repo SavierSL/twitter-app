@@ -1,0 +1,135 @@
+.profileContainer {
+  height: 100vh;
+  width: 44vw;
+  margin-left: 23.1vw;
+  .picture {
+    height: 9rem;
+    width: 9rem;
+    background: rgb(15, 132, 242);
+    border-radius: 100%;
+    border: solid white 5px;
+    margin-top: 7rem;
+    margin-left: 0.8rem;
+    z-index: 300;
+    position: absolute;
+  }
+  h1 {
+    padding: 1rem;
+  }
+  .profileBanner {
+    height: 3.4rem;
+    z-index: 1000;
+    background: white;
+    border-bottom: solid green 1px;
+    width: 44vw;
+    position: fixed;
+    top: 0;
+    h3 {
+      padding: 1rem;
+    }
+  }
+  .profileContent {
+    height: 100vh;
+    width: 44vw;
+    margin-top: 3.4rem;
+    position: relative;
+
+    .profileDetails {
+      height: 30rem;
+      position: relative;
+
+      .background {
+        height: 14.9rem;
+        width: 100%;
+        background: black;
+      }
+
+      .profileBio {
+        height: 15.5rem;
+        width: 100%;
+        position: absolute;
+        margin-top: -3.5rem;
+
+        .editBioContainer {
+          height: 3.8rem;
+          background: white;
+          button {
+            height: 2.5rem;
+            padding: 0.5rem;
+            border-radius: 5rem;
+            right: 0;
+            position: absolute;
+            margin: 1rem;
+            width: 7rem;
+            background: none;
+            border: solid rgb(15, 132, 242) 1px;
+            color: rgb(15, 132, 242);
+            cursor: pointer;
+
+            &:hover {
+              background: lightblue;
+            }
+          }
+        }
+        .nameContainer {
+          margin-left: 1rem;
+        }
+        .bioDetailsContainer {
+          width: 15rem;
+          height: 2.5rem;
+          margin-top: 0.5rem;
+          margin-left: 1rem;
+        }
+        .aboutContainer {
+          display: flex;
+          height: 2rem;
+          margin-left: 1rem;
+          p {
+            margin-right: 1.5rem;
+            color: gray;
+          }
+        }
+        .followersContainer {
+          margin-left: 1rem;
+          display: flex;
+          p {
+            margin-right: 1rem;
+            font-weight: 600;
+            span {
+              font-weight: 400;
+              color: gray;
+            }
+          }
+        }
+        .profileNavBars {
+          margin-top: 2rem;
+          display: flex;
+          width: 100%;
+          height: 3rem;
+          align-items: center;
+
+          a {
+            width: 25%;
+            text-align: center;
+            color: gray;
+            cursor: pointer;
+            height: 3rem;
+            padding-top: 12px;
+            &:hover {
+              transition: 0.3s;
+              background: rgb(240, 239, 239);
+              color: rgb(15, 132, 242);
+            }
+          }
+        }
+      }
+    }
+    // profile NewsFeed
+    .profileNewsFeedContainer {
+      height: 100vh;
+      width: 44vw;
+      margin: 0 auto;
+      background: red;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.retweetContent {
+  display: flex;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  .innerRtContainer {
+    display: flex;
+    border: solid gray 1px;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    align-items: center;
+    .picture {
+      background: red;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 100%;
+      margin: 1rem;
+    }
+
+    .rtContent {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      span {
+        font-weight: 400;
+        color: gray;
+      }
+    }
+  }
+}
