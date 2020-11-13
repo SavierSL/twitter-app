@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/profileStyles.scss";
-import { NavLink } from "react-router-dom";
+import { Route, NavLink, BrowserRouter as Router } from "react-router-dom";
+import Tweets from "../Profile/ProfileNavs/tweet";
 
 const Profile = () => {
   return (
@@ -9,7 +10,7 @@ const Profile = () => {
         <div className="profileBanner">
           <h3>Save</h3>
         </div>
-        <div className="picture"></div>
+        <div className="pictureProf"></div>
         <div className="profileContent">
           <div className="profileDetails">
             <div className="background"></div>
@@ -39,22 +40,26 @@ const Profile = () => {
                 </p>
               </div>
               <div className="profileNavBars">
-                <NavLink to="">
+                <NavLink to="/profile">
                   <h4>Tweets</h4>
                 </NavLink>
-                <NavLink to="">
+                <NavLink to="/profile/tweetsandreplies">
                   <h4>Tweets &amp; Replies</h4>
                 </NavLink>
-                <NavLink to="">
+                <NavLink to="/profile/media">
                   <h4>Media</h4>
                 </NavLink>
-                <NavLink to="">
+                <NavLink to="/profile/likes">
                   <h4>Likes</h4>
                 </NavLink>
               </div>
             </div>
           </div>
-          <div className="profileNewsFeedContainer"></div>
+          <div className="profileNewsFeedContainer">
+            <Route exact path="/profile">
+              <Tweets />
+            </Route>
+          </div>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ export const NewsFeedData = [
       userName: "@LucyHeart",
       tweets: {
         tweet: {
-          input: "Konnichiwa",
+          input: "Welcome to my simple twitter web app",
           time: new Date(),
           hearts: 0,
           retweets: 0,

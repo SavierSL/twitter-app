@@ -19,7 +19,7 @@ const App = () => {
           <Route exact path="/">
             <NewsFeed />
           </Route>
-          <Route exact path="/profile">
+          <Route path="/profile">
             <Profile />
           </Route>
         </Switch>

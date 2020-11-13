@@ -39,6 +39,9 @@ export const globalReducer = (state, action) => {
         msg: { condition: !state.msg.condition, data: action.data },
       };
     }
+    case "TWEET_WINDOW": {
+      return { ...state, tweetWindow: !state.tweetWindow };
+    }
 
     default: {
       throw new Error(`Invalid: ${action.type}`);
@@ -58,6 +61,7 @@ export const GlobalProvider = ({ children }) => {
       condition: false,
       data: null,
     },
+    tweetWindow: false,
   });
 
   return (

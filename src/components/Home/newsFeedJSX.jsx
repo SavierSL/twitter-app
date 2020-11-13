@@ -5,6 +5,8 @@ import {
   useGlobalDispatchContext,
 } from "../GlobalContext/GlobalContext";
 import RetweetedBox from "../Home/InterAction/retweetedBox";
+import TweetBox from "../ReusableComponents/tweetBox";
+import InteractBtn from "../ReusableComponents/interactButton";
 
 const NewsFeedBox = ({ allData, id }) => {
   // props
@@ -50,47 +52,22 @@ const NewsFeedBox = ({ allData, id }) => {
     <>
       <div className="mainNfContainer">
         <div className="nfContainer">
-          <div className="mainTweet" onClick={handleMainTweet}>
-            <div className="tweetContent">
-              <div className="picture"></div>
-              <div className="tweetDetails">
-                <div className="userName">
-                  <h4>
-                    {user.name} <span>{user.userName}</span>
-                  </h4>
-                </div>
-                <div className="tweetText">
-                  <p>{tweets.tweet.input}</p>
-                </div>
-              </div>
-            </div>
-            <div className="rt">
-              {user.retweet.name != "" ? (
-                <RetweetedBox
-                  name={user.retweet.name}
-                  userName={user.retweet.userName}
-                  tweetInput={user.retweet.tweetInput}
-                  innerRt={user.innerRetweet}
-                />
-              ) : (
-                ""
-              )}
-            </div>
-          </div>
-
-          <div className="interactBtn">
-            <ul>
-              <li onClick={handleMsg}>
-                msg <span>{user.message.length}</span>
-              </li>
-              <li onClick={handleRetweet}>
-                retweet <span>{user.retweetQt}</span>
-              </li>
-              <li onClick={handleHeart}>
-                heart <span>{user.hearts}</span>
-              </li>
-            </ul>
-          </div>
+          <TweetBox
+            name={user.name}
+            userName={user.userName}
+            tweetInput={tweets.tweet.input}
+            retweetBox={user.retweet}
+            innerRt={user.innerRetweet}
+          />
+          <InteractBtn
+            msg={user.message.length}
+            retweetQt={user.retweetQt}
+            hearts={user.hearts}
+            handleMsg={handleMsg}
+            handleRetweet={handleRetweet}
+            handleHeart={handleHeart}
+            user={user}
+          />
         </div>
       </div>
     </>
