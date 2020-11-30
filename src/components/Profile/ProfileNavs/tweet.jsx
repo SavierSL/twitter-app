@@ -9,6 +9,7 @@ import "../../Styles/tweetStyles.scss";
 import InteractBtn from "../../ReusableComponents/interactButton";
 
 const Tweet = () => {
+  const dispatch = useGlobalDispatchContext();
   const { data } = useGlobalStateContext();
   const currentUserName = CurrentAccount.user.userName;
   const datas = data.filter((item) => {

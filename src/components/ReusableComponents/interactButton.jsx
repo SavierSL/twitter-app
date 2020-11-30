@@ -1,5 +1,8 @@
 import React from "react";
 import "../Styles/interActBtnStyles.scss";
+import heartIcon from "../Assets/BtnImages/heart.png";
+import message from "../Assets/BtnImages/msg.png";
+import retweet from "../Assets/BtnImages/retweet.png";
 
 const InteractBtn = ({
   msg,
@@ -15,13 +18,15 @@ const InteractBtn = ({
       <div className="interactBtn">
         <ul>
           <li onClick={handleMsg}>
-            msg <span>{msg}</span>
+            <img src={message} alt="" />
+            <span>{msg}</span>
           </li>
           <li onClick={handleRetweet}>
-            retweet <span>{retweetQt}</span>
+            <img className="retweetBtn" src={retweet} alt="" />
+            <span>{retweetQt}</span>
           </li>
           <li onClick={handleHeart}>
-            heart <span>{hearts}</span>
+            <img src={heartIcon} alt="" /> <span>{hearts}</span>
           </li>
         </ul>
       </div>

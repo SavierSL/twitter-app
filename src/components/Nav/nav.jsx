@@ -6,6 +6,7 @@ import {
   useGlobalStateContext,
   useGlobalDispatchContext,
 } from "../GlobalContext/GlobalContext";
+import TwitterLogo from "../Assets/Images/twitterLogo.png";
 
 const Links = [
   { name: "Home", link: "/" },
@@ -26,7 +27,7 @@ const Nav = () => {
       <TweetWindow />
       <div className="navContainerBtns">
         <div className="logo">
-          <h1>Twitter</h1>
+          <img src={TwitterLogo} alt="" />
         </div>
         <div className="navBtnContainer">
           <ul>
